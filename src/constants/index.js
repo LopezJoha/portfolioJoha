@@ -31,14 +31,29 @@ import {
       title: "About",
     },
     {
-      id: "work",
-      title: "Work",
+      id: "projects",
+      title: "Projects",
     },
     {
       id: "contact",
       title: "Contact",
     },
   ];
+
+  export const navegacion = [
+    {
+      id: "about",
+      title: "Acerca de Mi",
+    },
+    {
+      id: "projects",
+      title: "Proyectos",
+    },
+    {
+      id: "contact",
+      title: "Contacto",
+    },
+  ]; 
   
   const services = [
     {
@@ -48,11 +63,22 @@ import {
     {
       title: "React Native Developer",
       icon: mobile,
+    },    
+    {
+      title: "Content Creator",
+      icon: creator,
+    },
+  ];
+
+  const servicios = [
+    {
+      title: "Desarrolladora Web",
+      icon: web,
     },
     {
-      title: "Backend Developer",
-      icon: backend,
-    },
+      title: "Desarrolladora React Native",
+      icon: mobile,
+    },    
     {
       title: "Content Creator",
       icon: creator,
@@ -73,10 +99,6 @@ import {
       icon: javascript,
     },
     {
-      name: "TypeScript",
-      icon: typescript,
-    },
-    {
       name: "React JS",
       icon: reactjs,
     },
@@ -89,16 +111,8 @@ import {
       icon: tailwind,
     },
     {
-      name: "Node JS",
-      icon: nodejs,
-    },
-    {
       name: "MongoDB",
       icon: mongodb,
-    },
-    {
-      name: "Three JS",
-      icon: threejs,
     },
     {
       name: "git",
@@ -107,11 +121,7 @@ import {
     {
       name: "figma",
       icon: figma,
-    },
-    {
-      name: "docker",
-      icon: docker,
-    },
+    }    
   ];
   
   const experiences = [
