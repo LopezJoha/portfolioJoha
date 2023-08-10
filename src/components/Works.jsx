@@ -6,7 +6,7 @@ import { styles } from "../styles";
 import { github } from "../assets";
 import { SectionWrapper } from "../highOrderComponent";
 
-import { projects } from "../constants";
+import { projects, proyectos } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 
 const ProjectCard = ({
@@ -25,9 +25,9 @@ const ProjectCard = ({
           scale: 1,
           speed: 450,
         }}
-        className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full'
+        className='bg-tertiary p-5 rounded-2xl w-[300px] md:w-[400px] '
       >
-        <div className='relative w-full h-[230px]'>
+        <div className='relative w-full h-[250px]'>
           <img
             src={image}
             alt='project_image'
@@ -47,12 +47,12 @@ const ProjectCard = ({
           </div>
         </div>
 
-        <div className='mt-5'>
+        <div className='mt-5 h-60'>
           <h3 className='text-white font-bold text-[24px]'>{name}</h3>
           <p className='mt-2 text-secondary text-[14px]'>{description}</p>
         </div>
 
-        <div className='mt-4 flex flex-wrap gap-2'>
+        <div className='mt-4 flex flex-wrap gap-2 h-10'>
           {tags.map((tag) => (
             <p
               key={`${name}-${tag.name}`}
@@ -75,28 +75,58 @@ const Works = (props) => {
   Adicionalmente, he desarrollado una aguda capacidad para percibir los detalles con precisión y estoy comprometida a entregar un trabajo de alta calidad. Cuento con la experiencia en el manejo de múltiples prioridades mientras organizo y priorizo tareas de manera efectiva. También una excelente habilidad de comunicación, así como trabajar en colaboración con mis compañeros para entregar proyectos exitosos.
   `; 
 
+  const projectsList = props.language ? projects : proyectos; 
+
   return (
     <>
-      <motion.div variants={textVariant()}>
-        <p className={`${styles.sectionSubText} `}> {props.language ? 'Projects' : 'Proyectos'}</p>
-        <h2 className={`${styles.sectionHeadText}`}>{ props.language ?'Get an overview of my latest projects' : 'Revisa algunos de mis proyectos' }.</h2>
-      </motion.div>
+      <div className="relative "> 
+        <div>
+          <div className="flex ">
+            <motion.div variants={textVariant()} >
+              <p className={`${styles.sectionSubText}   text-right`}> {props.language ? 'Projects' : 'Proyectos'}</p>
+              <h2 className={`${styles.sectionHeadText}  text-right`}>{ props.language ?'Get an overview of my latest projects' : 'Revisa algunos de mis proyectos' }.</h2>
+            </motion.div>
+          </div>
 
-      <div className='flex-auto justify-end '>
-        <motion.p
-          variants={fadeIn("", "", 0.1, 1)}
-          className='mt-3 text-secondary text-[17px] ml-96 leading-[30px] text-right '
-        >{experience}          
-        </motion.p>
-      </div>
+          <div className='flex justify-end content-end'>
+            <motion.p
+              variants={fadeIn("", "", 0.1, 1)}
+              className=' flex mt-3 text-secondary text-[17px] eading-[30px] text-right self-end w-9/12 '
+            >{experience}          
+            </motion.p>
+          </div>  
+        </div>    
 
-      <div className='mt-20 flex flex-wrap gap-7'>
-        {projects.map((project, index) => (
-          <ProjectCard key={`project-${index}`} index={index} {...project} />
-        ))}
+        <div className="mt-20 flex overflow-x-scroll overflow-auto scrollbar-hide  gap-7"
+        >
+          {projectsList.map((project, index) => (
+            <div key={`project-${index}`}>
+              {<ProjectCard  index={index} {...project} />}
+            </div>
+          ))}
+        </div>   
+
       </div>
     </>
   );
 };
 
 export default SectionWrapper(Works, "works");
+
+
+{/* <button
+          className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-200 p-2 rounded-full shadow-md"
+          style={{
+            left: "1rem",
+          }}
+        >
+          Botón Izquierdo
+        </button>
+        <button
+          className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-200 p-2 rounded-full shadow-md"
+          style={{
+            right: "1rem",
+          }}
+        >
+          Botón Derecho
+        </button> */}

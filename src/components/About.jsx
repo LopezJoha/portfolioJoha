@@ -50,15 +50,10 @@ const About = (props) => {
       <p className={styles.sectionSubText}> { subText } </p>
       <h2 className={styles.sectionHeadText}>{ headText }</h2>
     </motion.div>
-    <motion.p variants={fadeIn("", "", 0.1, 1)}
-              className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'>        
-    {mainText} 
+    <motion.p variants={fadeIn("", "", 0.1, 1)} className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'>        
+      {mainText} 
     </motion.p>
-      {/* <div className='mt-20 flex flex-wrap gap-7'>
-        {services.map((service, index) => (
-          <ServiceCard key={service.title} index={index} {...service} />
-        ))}
-      </div> */}
+      
      
     </>
   )

@@ -12,18 +12,16 @@ const App=() =>{
   
   return (
     <BrowserRouter>     
-      <div className={"relative z-0 bg-primary"}> 
-        <button className="sticky top-60 left-0 ... z-10" onClick={handleLanguage}>{language ? 'Spanish' : 'English'}</button>  
-         
+      <div className={"relative z-0 bg-primary"}>        
         <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
-          <Navbar language={language}/>
+          <Navbar language={language} function={handleLanguage}/>
           <Hero language={language}/>          
         </div> 
          
         <About language={language}/>       
         <Tech/>
         <Works language={language}/>
-        <Feedbacks/>
+        {/* <Feedbacks/> */}
 
         <div className="relative z-0">
           <Contact/>
@@ -37,4 +35,3 @@ const App=() =>{
 
 export default App
 
-//`${}`

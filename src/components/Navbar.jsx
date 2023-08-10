@@ -5,12 +5,12 @@ import { navLinks, navegacion } from '../constants';
 import {menu, close } from '../assets'; 
 import logo2 from '../assets/logov2.1.png'; 
 
-const Navbar = ({language}) => {
+const Navbar = (props) => {
 
   const [active, setActive] = useState(""); 
   const [toggle, setToggle] = useState(false); 
 
-  const navegationList = language ? navLinks : navegacion; 
+  const navegationList = props.language ? navLinks : navegacion; 
 
   return (
     <nav className={`${styles.paddingX} w-full flex-items-center py-5 fixed top-0 z-20 bg-primary`}>
@@ -23,6 +23,8 @@ const Navbar = ({language}) => {
               }}>
               <img src={logo2} alt='logo' className='w-14 h-14 object-cover'/>            
         </Link>
+
+        <button className='absolute top-0 right-0 z-30' onClick={props.function}>Prueba</button>
         <ul className='list-none hidden sm:flex flex-row gap-10'>
         {navegationList.map((item) =>(
           <li key={item.id}
