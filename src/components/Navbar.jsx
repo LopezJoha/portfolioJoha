@@ -4,6 +4,7 @@ import { styles } from '../styles';
 import { navLinks, navegacion } from '../constants';
 import {menu, close } from '../assets'; 
 import logo2 from '../assets/logov2.1.png'; 
+import Switch from './Switch';
 
 const Navbar = (props) => {
 
@@ -14,7 +15,9 @@ const Navbar = (props) => {
 
   return (
     <nav className={`${styles.paddingX} w-full flex-items-center py-5 fixed top-0 z-20 bg-primary`}>
+      
       <div className='w-full flex justify-between items-center max-w-7xl mx-auto '>
+      
         <Link to="/" 
               className='flex items-center gap-2'
               onClick={()=>{
@@ -24,8 +27,10 @@ const Navbar = (props) => {
               <img src={logo2} alt='logo' className='w-14 h-14 object-cover'/>            
         </Link>
 
-        <button className='absolute top-0 right-0 z-30' onClick={props.function}>Prueba</button>
-        <ul className='list-none hidden sm:flex flex-row gap-10'>
+        <Switch funcion={props.function} idioma={props.language}/>
+      
+      
+        <ul className='list-none hidden sm:flex flex-row gap-10'>        
         {navegationList.map((item) =>(
           <li key={item.id}
               className={`${active === item.title ? 'text-fuchsia-700': 'text-secondary'} hover:text-white text-[18px] font-medium cursor-pointer`}

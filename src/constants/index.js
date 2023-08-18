@@ -26,6 +26,10 @@ import {
     chowe, 
     stache, 
     comment,
+    portfolio, 
+    beyond, 
+    programming, 
+    BeyondExperience
     
   } from "../assets";
   
@@ -281,7 +285,7 @@ import {
           color: "orange-text-gradient",
         },
       ],
-      image: '',
+      image: portfolio,
       source_code_link: "https://github.com/",
     },
     {
@@ -302,7 +306,7 @@ import {
         color: "pink-text-gradient",
       },
     ],
-    image: '',
+    image: BeyondExperience,
     source_code_link: "https://github.com/",
   },
   {
@@ -322,7 +326,7 @@ import {
         color: "pink-text-gradient",
       },
     ],
-    image: '',
+    image: programming,
     source_code_link: "https://github.com/",
   },
   ];
@@ -420,7 +424,7 @@ import {
           color: "orange-text-gradient",
         },
       ],
-      image: '',
+      image: portfolio,
       source_code_link: "https://github.com/",
     },
     {
@@ -441,7 +445,7 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: '',
+      image: BeyondExperience,
       source_code_link: "https://github.com/",
     },
     {
@@ -461,7 +465,7 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: '',
+      image: programming,
       source_code_link: "https://github.com/",
     },
   ];

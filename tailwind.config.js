@@ -6,7 +6,7 @@ module.exports = {
     extend: {
       colors: {
         // primary: "#e0d0d1",
-        // secondary: "#637078",
+         secondary: "#637078",
         // tertiary: "#90a9b0",
         // "black-100": "#100d25",
         // "black-200": "#090325",
@@ -34,6 +34,10 @@ module.exports = {
         xs: "450px",
         
       },
+      backgroundImage:{        
+        'profile': "url('/src/assets/profile.png')",
+        'bgCard': "url('/src/assets/bgCard.png')"
+      }
     },
   },
   plugins: [],
