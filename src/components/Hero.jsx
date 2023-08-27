@@ -1,17 +1,19 @@
 import { styles } from '../styles'
+import { SectionWrapper } from '../highOrderComponent'
+import { profile } from '../assets/index'
 
 const Hero = ({ language }) => {
   return (
-    <section className={`relative w-full h-screen mx-auto `}>
+    <div className=" mt-24 flex flex-col sm:flex-row">
       <div
-        className={`absolute inset-0 top-[120px]  max-w-7xl  ${styles.paddingX} flex flex-row  gap-10 justify-evenly`}
+        className={` w-full sm:w-[50%] h-[50%] sm:h-full flex flex-row  gap-10 justify-evenly`}
       >
-        <div className="flex flex-col justify-center items-center mt-5">
+        <div className=" hidden xs:flex flex-col justify-center items-center mt-5">
           <div className="w-5 h-5 rounded-full bg-[#8b3c7f]" />
           <div className="w-1 sm:h-80 h-40 violet-gradient" />
         </div>
 
-        <div className='flex flex-col self-center'>
+        <div className="flex flex-col self-center">
           <h1 className={`${styles.heroHeadText}`}>
             {language ? `Hello! I'm ` : `Hola! Soy `}
             <span className="text-[#8b3c7f]">Joha</span>
@@ -22,13 +24,17 @@ const Hero = ({ language }) => {
             {language ? 'Web & Apps' : 'Front End'}
           </p>
         </div>
-
-        <div className="bg-profile  h-[400px] w-[350px] bg-cover bg-no-repeat bg-center rounded-lg">
-
-        </div>
       </div>
-    </section>
+
+      <div className=" w-full sm:w-[50%] h-[50%] sm:h-full flex justify-center content-center">
+        <img
+          src={profile}
+          alt="profilePhoto"
+          className="flex w-[80%] h-[80%] max-w-xs max-h-xs "
+        />
+      </div>
+    </div>
   )
 }
 
-export default Hero
+export default SectionWrapper(Hero, 'hero')

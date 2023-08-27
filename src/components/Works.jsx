@@ -1,14 +1,14 @@
 import React, { useState, useRef } from 'react'
-import { motion } from 'framer-motion';
+import { motion } from 'framer-motion'
 
-import { styles } from '../styles';
-import { github } from '../assets';
-import { SectionWrapper } from '../highOrderComponent';
+import { styles } from '../styles'
+import { github } from '../assets'
+import { SectionWrapper } from '../highOrderComponent'
 
-import { projects, proyectos } from '../constants';
-import { fadeIn, textVariant } from '../utils/motion';
+import { projects, proyectos } from '../constants'
+import { fadeIn, textVariant } from '../utils/motion'
 
-import { Carousel } from '../components/carrusel/index';
+import { Carousel } from '../components/carrusel/index'
 
 const ProjectCard = ({
   index,
@@ -70,61 +70,41 @@ const Works = (props) => {
   const projectsList = props.language ? projects : proyectos
 
   return (
-    <>
-      <div className="relative">
-        <div>
-          <div className="flex justify-end">
-            <motion.div variants={textVariant()}>
-              <p className={`${styles.sectionSubText}   text-right`}>
-                {' '}
-                {props.language ? 'Projects' : 'Proyectos'}
-              </p>
-              <h2 className={`${styles.sectionHeadText}  text-right`}>
-                {props.language ? 'Get an overview of my latest projects' : 'Revisa algunos de mis últimos proyectos'}
-                .
-              </h2>
-            </motion.div>
-          </div>
-
-          <div className="flex justify-end content-end">
-            <motion.p
-              variants={fadeIn('', '', 0.1, 1)}
-              className=" flex mt-3 text-secondary text-[17px] eading-[30px] text-right self-end w-9/12 "
-            >
-              {experience}
-            </motion.p>
-          </div>
+    <div className="relative">
+      <div>
+        <div className="flex">
+          <motion.div variants={textVariant()}>
+            <p className={`${styles.sectionSubText} text-right`}>
+              {props.language ? 'Projects' : 'Proyectos'}
+            </p>
+            <h2 className={`${styles.sectionHeadText}  text-center sm:text-right`}>
+              {props.language
+                ? 'Get an overview of my latest projects'
+                : 'Revisa algunos de mis últimos proyectos'}
+              .
+            </h2>
+          </motion.div>
         </div>
 
-        <Carousel>
-          {projectsList.map((project, index) => (
-            <div className="flex" key={index}>
-              <ProjectCard index={index} {...project} />
-            </div>
-          ))}
-        </Carousel>
+        <div className="flex justify-end content-end">
+          <motion.p
+            variants={fadeIn('', '', 0.1, 1)}
+            className=" flex mt-3 text-secondary text-[17px] eading-[30px] text-center sm:text-right self-end w-full w-9/12 "
+          >
+            {experience}
+          </motion.p>
+        </div>
       </div>
-    </>
+
+      <Carousel>
+        {projectsList.map((project, index) => (
+          <div className="flex" key={index}>
+            <ProjectCard index={index} {...project} />
+          </div>
+        ))}
+      </Carousel>
+    </div>
   )
 }
 
-export default SectionWrapper(Works, 'works')
-
-{
-  /* <button
-          className="absolute left-0 top-1/2 bg-gray-200 p-2 rounded-full"
-          style={{
-            left: "1rem",
-          }}
-        >
-          
-        </button>
-        <button
-          className="absolute right-0 top-1/2 bg-gray-200 p-2 rounded-full"
-          style={{
-            right: "1rem",
-          }}
-        >
-          
-        </button> */
-}
+export default SectionWrapper(Works, 'projects')

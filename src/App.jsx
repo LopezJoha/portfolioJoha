@@ -1,45 +1,44 @@
 import { BrowserRouter } from 'react-router-dom'
 import {
-    About,
-    Contact,
-    Experience,
-    Feedbacks,
-    Hero,
-    Navbar,
-    Tech,
-    Works,
-    StarsCanvas,
+  About,
+  Contact,
+  Experience,
+  Feedbacks,
+  Hero,
+  Navbar,
+  Tech,
+  Works,
+  StarsCanvas,
 } from './components'
-import React, { useState, useEffect } from 'react'; 
-import Switch from './components/Switch';
+import React, { useState, useEffect } from 'react'
+import Switch from './components/Switch'
 
 const App = () => {
-    const [language, setLanguage] = useState(true)
+  const [language, setLanguage] = useState(true)
 
-    const handleLanguage = () => {
-        setLanguage((prevState) => !prevState)
-    }
+  const handleLanguage = () => {
+    setLanguage((prevState) => !prevState)
+  }
 
-    return (
-        <BrowserRouter>
-            <div className={'relative z-0 bg-primary'}>
-                <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
-                    <Navbar language={language} function={handleLanguage} />
-                    <Hero language={language} />
-                </div>
+  return (
+    <BrowserRouter>
+      <div className={'relative z-0 bg-primary'}>
+        <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
+          <Navbar language={language} function={handleLanguage} />
+          <Hero language={language} />
+        </div>
 
-                <About language={language} />
-                <Works language={language} />
-                
+        <About language={language} />
+        <Works language={language} />
 
-                <div className="relative z-0">
-                    <Tech />
-                    <StarsCanvas />
-                </div>
-                <Contact />
-            </div>
-        </BrowserRouter>
-    )
+        <div className="relative z-0">
+          <Tech />
+          <StarsCanvas />
+        </div>
+        <Contact language={language} />
+      </div>
+    </BrowserRouter>
+  )
 }
 
 export default App

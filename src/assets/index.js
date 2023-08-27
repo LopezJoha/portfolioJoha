@@ -44,6 +44,10 @@ import portfolio from './portfolio.png'
 import beyond from './Be.jpg'
 import programming from './programming.png'
 import BeyondExperience from './BeyondExperience.jpg'
+import Colombia from './Colombia.png'
+import England from './England.png'
+import left from './left.png'
+import right from './right.png'
 
 export {
   logo,
@@ -86,4 +90,8 @@ export {
   beyond,
   programming,
   BeyondExperience,
+  Colombia,
+  England,
+  left,
+  right,
 }

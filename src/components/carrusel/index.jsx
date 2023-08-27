@@ -1,6 +1,6 @@
-import { useSwipeable } from 'react-swipeable'
-import React, { useState } from 'react'
-import './styles.css'
+import { useSwipeable } from 'react-swipeable';
+import React, { useState } from 'react';
+import './styles.css';
 
 const getOrder = (index, focusedIndex, numItems) => {
     return index - focusedIndex < 0
@@ -75,7 +75,7 @@ export const Carousel = ({ children }) => {
             <div className="flex flex-1 absolute top-1/2 left-0 w-full items-center justify-between z-20">
                 <button onClick={() => slide('prev')} >
                     prev
-                   
+                   <img src="" alt="" />
                 </button>
                 <button onClick={() => slide('next')}>
                    
