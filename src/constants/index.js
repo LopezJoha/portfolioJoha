@@ -432,7 +432,7 @@ import {
   ];
 
   
-  export { services, technologies, experiences, testimonials, projects, proyectos };
+  export { services, technologies, experiences, projects, proyectos };
 
 
   // {

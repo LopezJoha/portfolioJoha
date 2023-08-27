@@ -3,7 +3,6 @@ import {
   About,
   Contact,
   Experience,
-  Feedbacks,
   Hero,
   Navbar,
   Tech,
@@ -11,7 +10,7 @@ import {
   StarsCanvas,
 } from './components'
 import React, { useState, useEffect } from 'react'
-import Switch from './components/Switch'
+
 
 const App = () => {
   const [language, setLanguage] = useState(true)
