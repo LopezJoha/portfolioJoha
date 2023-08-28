@@ -1,19 +1,18 @@
 .wrapper {
-    /* width: 100%; */
     overflow-x: scroll;
-    overflow: hidden;
-    
-    
+    overflow: hidden;       
 }
 
 .carousel-container {
     display: flex;
     transition: transform .4s ease;
-    transform: translateX(calc(0))
+    transform: translateX(calc(0)); 
+    border: red solid 3px; 
 }
 
 .carousel-container.sliding {
     transition: none;
+    
 }
 
 .carousel-container.sliding.next {
@@ -25,11 +24,8 @@
 }
 
 .carousel-slot {
-    /* flex: 1 0 100%;
-    flex-basis: 100%; 
-    margin-right: 16px;*/
-    display: flex;
-   margin: 35px;
+   display: flex;
+   margin: 2.5%;
   
    
 }   

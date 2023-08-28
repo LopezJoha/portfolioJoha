@@ -19,16 +19,16 @@ const ProjectCard = ({
   source_code_link,
 }) => {
   return (
-    <motion.div variants={fadeIn('up', 'spring', index * 0.5, 0.75)}>
-      <div className=" mt-20 w-full flex flex-col justify-center items-center p-5 rounded-2xl shadow-[0_10px_20px_rgba(139,_60,_127,_0.3)]  ">
-        <div className="relative  w-[300px] sm:w-[450px] h-60 ">
+    <motion.div variants={fadeIn('up', 'spring', index * 0.5, 0.75)} className='w-screen xs:w-[450px] sm:w-[550px] my-20 flex justify-center content-center '>
+      <div className=" p-2 w-[80%] flex flex-col  rounded-2xl xs:shadow-[0_10px_20px_rgba(139,_60,_127,_0.3)] border-[1px] border-solid  border-fuchsia-900 xs:border-none">
+        <div className="  flex justify-center content-center">
           <img
             src={image}
             alt="project_image"
-            className="w-full h-full object-fill rounded-2xl"
+            className="w-[90%] h-32  xs:w-full sm:h-52 rounded-2xl"
           />
 
-          <div className="absolute inset-0 flex justify-end m-3 card-img_hover ">
+          {/* <div className="absolute inset-0 m-3 card-img_hover ">
             <div
               onClick={() => window.open(source_code_link, '_blank')}
               className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer z-60 shadow-[rgba(7,_65,_210,_0.1)_0px_9px_30px]"
@@ -39,19 +39,20 @@ const ProjectCard = ({
                 className="w-1/2 h-1/2 object-contain"
               />
             </div>
-          </div>
+          </div> */}
+
         </div>
 
-        <div className="mt-5 h-40">
-          <h3 className="text-white font-bold text-[24px]">{name}</h3>
-          <p className="mt-2 text-secondary text-[14px]">{description}</p>
+        <div className="mt-5 w-full h-48 flex flex-col">
+          <h3 className=" text-white font-bold text-lg xs:text-2xl text-center">{name}</h3>
+          <p className=" mt-2 text-secondary text-xs xs:text-sm text-center">{description}</p>
         </div>
 
-        <div className="mt-4 flex flex-wrap gap-2 h-10 h-10">
+        <div className="mt-4 flex flex-wrap gap-2 justify-center content-center">
           {tags.map((tag) => (
             <p
               key={`${name}-${tag.name}`}
-              className={`text-[14px] ${tag.color}`}
+              className={`text-xs xs:text-sm ${tag.color}`}
             >
               #{tag.name}
             </p>

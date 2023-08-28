@@ -1,6 +1,6 @@
 import { useSwipeable } from 'react-swipeable'
 import React, { useState } from 'react'
-import './styles.css'
+
 import { left, right } from '../../assets/index'
 
 const getOrder = (index, focusedIndex, numItems) => {
@@ -51,13 +51,12 @@ export const Carousel = ({ children }) => {
 
   return (
     <div {...handlers} style={{ touchAction: 'pan-x' }} className="relative ">
-      <div className="wrapper">
-        <div
-          className={`carousel-container ${direction} ${sliding && 'sliding'} `}
+      <div className="overflow-x-scroll overflow-hidden ">
+        <div className={`flex  transition-transform duration-300 ease-in-out transform translate-x-0`}
         >
           {React.Children.map(children, (child, index) => (
             <div
-              className="carousel-slot "
+              className="flex transition-transform duration-400 ease-in"
               style={{
                 order: getOrder(index, focusedIndex, numItems),
               }}
@@ -75,10 +74,8 @@ export const Carousel = ({ children }) => {
         >
           <img
             src={left}
-            alt="prev"
-            width={'50px'}
-            height={'50px'}
-            className="absolute z-20 left-[-30px] transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-300"
+            alt="prev"  
+            className="absolute w-6 h-4 sm:w-12 xs:h-8 z-20 left-[-20px] sm:left-[-30px] transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-300"
           />
         </button>
 
@@ -89,9 +86,7 @@ export const Carousel = ({ children }) => {
           <img
             src={right}
             alt="next"
-            width={'50px'}
-            height={'50px'}
-            className="absolute z-20 right-[-30px] transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-300"
+            className="absolute w-6 h-4 sm:w-12 xs:h-8 z-20 right-[-20px] sm:right-[-30px] transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-300"
           />
         </button>
       </div>

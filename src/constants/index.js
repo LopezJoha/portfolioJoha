@@ -204,7 +204,7 @@ import {
       source_code_link: "https://github.com/",
     },
     {
-      name: "Custom Comment Management",
+      name: "Custom Comments",
       description:
         "I built a React application that allows users to specify criteria, and based on this, the application displays different comments. This project blends interactive application development with robust testing to guarantee functionality and software quality.",
       tags: [
