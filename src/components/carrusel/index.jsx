@@ -50,7 +50,7 @@ export const Carousel = ({ children }) => {
   })
 
   return (
-    <div {...handlers} style={{ touchAction: 'pan-x' }} className="relative ">
+    <div {...handlers} style={{ touchAction: 'pan-x' }} className="relative cursor-pointer ">
       <div className="overflow-x-scroll overflow-hidden ">
         <div className={`flex  transition-transform duration-300 ease-in-out transform translate-x-0`}
         >
@@ -75,7 +75,7 @@ export const Carousel = ({ children }) => {
           <img
             src={left}
             alt="prev"  
-            className="absolute w-6 h-4 sm:w-12 xs:h-8 z-20 left-[-20px] sm:left-[-30px] transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-300"
+            className="absolute w-6 h-4 sm:w-12 xs:h-8 z-20 left-0 sm:left-[-30px] transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-300"
           />
         </button>
 
@@ -86,7 +86,7 @@ export const Carousel = ({ children }) => {
           <img
             src={right}
             alt="next"
-            className="absolute w-6 h-4 sm:w-12 xs:h-8 z-20 right-[-20px] sm:right-[-30px] transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-300"
+            className="absolute w-6 h-4 sm:w-12 xs:h-8 z-20 right-0 sm:right-[-30px] transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-300"
           />
         </button>
       </div>

@@ -73,7 +73,6 @@ const Contact = (props) => {
           {props.language ? 'Get in touch' : 'Contáctame'}
         </p>
         <h3 className={styles.sectionHeadText}>
-          {' '}
           {props.language ? 'Contact.' : 'Contacto.'}
         </h3>
 
@@ -83,36 +82,54 @@ const Contact = (props) => {
           className="bg-bgCard bg-cover bg-no-repeat mt-12 flex flex-col gap-5 p-10 rounded-lg shadow-[0_10px_20px_rgba(139,_60,_127,_0.3)]"
         >
           <label className="flex flex-col">
-            <span className="text-white font-medium mb-4">Your Name</span>
+            <span className="text-white font-medium mb-4">
+              {props.language ? 'Your Name' : 'Tu nombre'}
+            </span>
             <input
               type="text"
               name="name"
               value={form.name}
               onChange={handleChange}
-              placeholder="What's your good name?"
-              className="bg-tertiary py-2 px-4 w-full placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium "
+              placeholder={
+                props.language
+                  ? "What's your good name?"
+                  : '¿Cuál es tu Nombre?'
+              }
+              className="bg-tertiary py-2 px-4 w-full placeholder:text-secondary text-black rounded-lg outline-none border-none font-medium "
             />
           </label>
           <label className="flex flex-col">
-            <span className="text-white font-medium mb-4">Your email</span>
+            <span className="text-white font-medium mb-4">
+              {props.language ? 'Your Email' : 'Tu Correo'}
+            </span>
             <input
               type="email"
               name="email"
               value={form.email}
               onChange={handleChange}
-              placeholder="What's your web address?"
-              className="bg-tertiary py-2 px-4 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium "
+              placeholder={
+                props.language
+                  ? "What's your web address?"
+                  : '¿Cuál es tu correo electrónico?'
+              }
+              className="bg-tertiary py-2 px-4 placeholder:text-secondary text-black rounded-lg outline-none border-none font-medium "
             />
           </label>
           <label className="flex flex-col">
-            <span className="text-white font-medium mb-4">Your Message</span>
+            <span className="text-white font-medium mb-4">
+              {props.language ? 'Your Message' : 'Tu Mensaje'}
+            </span>
             <textarea
               rows={7}
               name="message"
               value={form.message}
               onChange={handleChange}
-              placeholder="What you want to say?"
-              className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium "
+              placeholder={
+                props.language
+                  ? 'Let me know what you want to say here'
+                  : 'Déjame tu mensajito por aquí'
+              }
+              className="bg-tertiary py-4 px-6 placeholder:text-secondary text-black rounded-lg outline-none border-none font-medium "
             />
           </label>
 
@@ -124,10 +141,8 @@ const Contact = (props) => {
           </button>
         </form>
       </motion.div>
-      
     </div>
   )
 }
 
 export default SectionWrapper(Contact, 'contact')
-
