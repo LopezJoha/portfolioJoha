@@ -25,7 +25,7 @@ const About = (props) => {
       <div className="flex justify-start content-start">
         <motion.p
           variants={fadeIn('', '', 0.1, 1)}
-          className="flex mt-4 text-secondary text-[17px] leading-[30px] text-center sm:text-left self-start w-full sm:w-9/12"
+          className="flex mt-4 text-white text-[17px] leading-[30px] text-center sm:text-left self-start w-full sm:w-9/12 "
         >
           {mainText}
         </motion.p>

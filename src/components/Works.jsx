@@ -45,7 +45,7 @@ const ProjectCard = ({
 
         <div className="mt-5 w-full h-48 flex flex-col">
           <h3 className=" text-white font-bold text-lg xs:text-2xl text-center">{name}</h3>
-          <p className=" mt-2 text-secondary text-xs xs:text-sm text-center">{description}</p>
+          <p className=" mt-2 text-white text-xs xs:text-sm text-center">{description}</p>
         </div>
 
         <div className="mt-4 flex flex-wrap gap-2 justify-center content-center">
