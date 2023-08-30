@@ -36,9 +36,9 @@ const Navbar = (props) => {
               key={item.id}
               className={`${
                 active === item.title ? 'text-fuchsia-700' : 'text-secondary'
-              } hover:text-white flex-1 py-2 text-[18px] font-medium cursor-pointer`}
+              } hover:text-white  flex flex-1 justify-end py-2 text-[18px] font-medium cursor-pointer`}
               onClick={() => setActive(item.title)}>
-              <a href={`#${item.id}`}>{item.title}</a>
+              <a href={`#${item.id} `}>{item.title}</a>
             </li>
           ))}
         </ul>
@@ -60,7 +60,7 @@ const Navbar = (props) => {
                   key={item.id}
                   className={`${
                     active === item.title ? 'text-secondary' : 'text-white'
-                  } w-full flex justify-center font-poppins font-medium cursor-pointer text-[16px] border-[1px] border-solid  border-slate-500 rounded-lg `}
+                  } w-full flex justify-center font-poppins font-medium py-2 cursor-pointer text-[16px] border-[1px] border-solid  border-slate-500 rounded-lg `}
                   onClick={() => {
                     setToggle(!toggle)
                     setActive(item.title)

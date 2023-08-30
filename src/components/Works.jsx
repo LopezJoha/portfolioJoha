@@ -19,7 +19,10 @@ const ProjectCard = ({
   source_code_link,
 }) => {
   return (
-    <motion.div variants={fadeIn('up', 'spring', index * 0.5, 0.75)} className='w-screen xs:w-[450px] sm:w-[550px] my-20 flex justify-center content-center '>
+    <motion.div
+      variants={fadeIn('up', 'spring', index * 0.5, 0.75)}
+      className="w-screen xs:w-[450px] sm:w-[550px] my-20 flex justify-center content-center "
+    >
       <div className=" p-2 w-[80%] flex flex-col  rounded-2xl xs:shadow-[0_10px_20px_rgba(139,_60,_127,_0.3)] border-[1px] border-solid  border-fuchsia-900 xs:border-none">
         <div className="  flex justify-center content-center">
           <img
@@ -40,12 +43,15 @@ const ProjectCard = ({
               />
             </div>
           </div> */}
-
         </div>
 
         <div className="mt-5 w-full h-48 flex flex-col">
-          <h3 className=" text-white font-bold text-lg xs:text-2xl text-center">{name}</h3>
-          <p className=" mt-2 text-white text-xs xs:text-sm text-center">{description}</p>
+          <h3 className=" text-white font-bold text-lg xs:text-2xl text-center">
+            {name}
+          </h3>
+          <p className=" mt-2 text-white text-xs xs:text-sm text-center">
+            {description}
+          </p>
         </div>
 
         <div className="mt-4 flex flex-wrap gap-2 justify-center content-center">
@@ -78,7 +84,9 @@ const Works = (props) => {
             <p className={`${styles.sectionSubText} text-right`}>
               {props.language ? 'Projects' : 'Proyectos'}
             </p>
-            <h2 className={`${styles.sectionHeadText}  text-center sm:text-right`}>
+            <h2
+              className={`${styles.sectionHeadText}  text-center sm:text-right`}
+            >
               {props.language
                 ? 'Get an overview of my latest projects'
                 : 'Revisa algunos de mis últimos proyectos'}
@@ -90,7 +98,7 @@ const Works = (props) => {
         <div className="flex justify-end content-end">
           <motion.p
             variants={fadeIn('', '', 0.1, 1)}
-            className=" flex mt-3 text-secondary text-[17px] eading-[30px] text-center sm:text-right self-end w-full w-9/12 "
+            className=" flex mt-3 text-white text-[17px] eading-[30px] text-center sm:text-right self-end w-full sm:w-9/12 "
           >
             {experience}
           </motion.p>
