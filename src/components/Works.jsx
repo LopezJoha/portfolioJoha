@@ -29,6 +29,7 @@ const ProjectCard = ({
             src={image}
             alt="project_image"
             className="w-[90%] h-32  xs:w-full sm:h-52 rounded-2xl"
+            onClick={() => window.open(source_code_link, '_blank')}
           />
 
           {/* <div className="absolute inset-0 m-3 card-img_hover ">

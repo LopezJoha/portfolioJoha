@@ -30,7 +30,7 @@ const Navbar = (props) => {
 
         <Switch funcion={props.function} idioma={props.language} />
 
-        <ul className="min-w-[50%] list-none hidden sm:flex flex-row gap-10">
+        <ul className="min-w-[70%] list-none hidden sm:flex flex-row gap-10">
           {navegationList.map((item) => (
             <li
               key={item.id}
