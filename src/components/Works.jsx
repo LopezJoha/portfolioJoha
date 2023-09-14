@@ -79,18 +79,13 @@ const Works = (props) => {
   return (
     <div className="relative">
       <div>
-        <div className="flex">
-          <motion.div variants={textVariant()}>
-            <p className={`${styles.sectionSubText} text-right`}>
+        <div className="flex justify-center sm:justify-end">
+          <motion.div variants={textVariant()} className=''>
+            <p className={`${styles.sectionSubText} text-right justify-self-end`}>
               {props.language ? 'Projects' : 'Proyectos'}
             </p>
-            <h2
-              className={`${styles.sectionHeadText}  text-center sm:text-right`}
-            >
-              {props.language
-                ? 'Get an overview of my latest projects'
-                : 'Revisa algunos de mis últimos proyectos'}
-              .
+            <h2 className={`${styles.sectionHeadText} text-center sm:text-right sm:justify-self-end`}>
+             {props.language ? 'Get an overview of my latest projects' :'Revisa algunos de mis últimos proyectos'}             
             </h2>
           </motion.div>
         </div>
