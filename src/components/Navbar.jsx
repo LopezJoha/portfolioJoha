@@ -14,12 +14,12 @@ const Navbar = (props) => {
 
   return (
     <nav
-      className={`${styles.paddingX} w-full flex-items-center py-5 fixed top-0 z-20 bg-primary`}
+      className={`${styles.paddingX} w-full  flex justify-between py-5 fixed top-0 z-20 bg-primary`}
     >
-      <div className="w-full flex justify-between items-center max-w-7xl mx-auto ">
+      <div className=" flex justify-around items-center gap-4">
         <Link
           to="/"
-          className="flex items-center gap-2"
+          className="flex items-center "
           onClick={() => {
             setActive('')
             window.scrollTo(0, 0)
@@ -28,9 +28,9 @@ const Navbar = (props) => {
           <img src={logo2} alt="logo" className="w-14 h-14 object-cover" />
         </Link>
 
-        <Switch funcion={props.function} idioma={props.language} />
-
-        <ul className="min-w-[70%] list-none hidden sm:flex flex-row gap-10">
+          <Switch funcion={props.function} idioma={props.language} />
+        </div>
+        <ul className=" list-none hidden sm:flex flex-row gap-10">
           {navegationList.map((item) => (
             <li
               key={item.id}
@@ -71,8 +71,7 @@ const Navbar = (props) => {
               ))}
             </ul>
           </div>
-        </div>
-      </div>
+        </div>      
     </nav>
   )
 }
