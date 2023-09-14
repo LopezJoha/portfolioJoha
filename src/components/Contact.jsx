@@ -92,7 +92,7 @@ const Contact = (props) => {
               onChange={handleChange}
               placeholder={
                 props.language
-                  ? "What's your good name?"
+                  ? "What is your name?"
                   : '¿Cuál es tu Nombre?'
               }
               className="bg-tertiary py-2 px-4 w-full placeholder:text-secondary text-black rounded-lg outline-none border-none font-medium "
@@ -109,7 +109,7 @@ const Contact = (props) => {
               onChange={handleChange}
               placeholder={
                 props.language
-                  ? "What's your web address?"
+                  ? "What is your email?"
                   : '¿Cuál es tu correo electrónico?'
               }
               className="bg-tertiary py-2 px-4 placeholder:text-secondary text-black rounded-lg outline-none border-none font-medium "
