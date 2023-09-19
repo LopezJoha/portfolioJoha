@@ -162,7 +162,7 @@ const projects = [
       },
     ],
     image: chowe,
-    source_code_link: '',
+    source_code_link: 'https://chowe.app/',
   },
   {
     name: 'Stache',
@@ -208,7 +208,7 @@ const projects = [
       },
     ],
     image: comment,
-    source_code_link: '',
+    source_code_link: '#',
   },
   {
     name: 'Portfolio',
@@ -254,7 +254,7 @@ const projects = [
       },
     ],
     image: BeyondExperience,
-    source_code_link: '',
+    source_code_link: '#',
   },
   {
     name: `Programming Instructor`,
@@ -298,7 +298,7 @@ const proyectos = [
       },
     ],
     image: chowe,
-    source_code_link: '',
+    source_code_link: 'https://chowe.app/',
   },
   {
     name: 'Stache',
@@ -344,7 +344,7 @@ const proyectos = [
       },
     ],
     image: comment,
-    source_code_link: '',
+    source_code_link: '#',
   },
   {
     name: 'Portfolio',
@@ -390,7 +390,7 @@ const proyectos = [
       },
     ],
     image: BeyondExperience,
-    source_code_link: '',
+    source_code_link: '#',
   },
   {
     name: `Programming Instructor`,
