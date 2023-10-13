@@ -208,7 +208,7 @@ const projects = [
       },
     ],
     image: comment,
-    source_code_link: '#',
+    source_code_link: 'https://github.com/LopezJoha?tab=repositories',
   },
   {
     name: 'Portfolio',
@@ -254,7 +254,7 @@ const projects = [
       },
     ],
     image: BeyondExperience,
-    source_code_link: '#',
+    source_code_link: 'https://github.com/LopezJoha?tab=repositories',
   },
   {
     name: `Programming Instructor`,
@@ -344,7 +344,7 @@ const proyectos = [
       },
     ],
     image: comment,
-    source_code_link: '#',
+    source_code_link: 'https://github.com/LopezJoha?tab=repositories',
   },
   {
     name: 'Portfolio',
@@ -390,7 +390,7 @@ const proyectos = [
       },
     ],
     image: BeyondExperience,
-    source_code_link: '#',
+    source_code_link: 'https://github.com/LopezJoha?tab=repositories',
   },
   {
     name: `Programming Instructor`,
