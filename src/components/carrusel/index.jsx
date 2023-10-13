@@ -70,7 +70,7 @@ export const Carousel = ({ children }) => {
       <div className="flex flex-1 absolute top-1/2 left-0 w-full ">
         <button
           onClick={() => slide('prev')}
-          className="relative w-full h-full"
+          className="relative w-full h-full transition duration-500 ease-in-out"
         >
           <img
             src={left}
@@ -81,7 +81,7 @@ export const Carousel = ({ children }) => {
 
         <button
           onClick={() => slide('next')}
-          className="relative w-full h-full"
+          className="relative w-full h-full transition duration-500 ease-in-out"
         >
           <img
             src={right}
