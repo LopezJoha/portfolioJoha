@@ -1,0 +1,29 @@
+.wrapper {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+}
+
+.carousel-container {
+    display: flex;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    transition: transform .4s ease;
+    overflow: hidden;
+}
+
+.carousel-container.sliding {
+    transition: none;
+}
+
+.carousel-container.sliding.next {
+    transform: translateX(500px)
+}
+
+.carousel-container.sliding.prev {
+    transform: translateX(calc((-500px)))
+}

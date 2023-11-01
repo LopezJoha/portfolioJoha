@@ -163,6 +163,7 @@ const projects = [
     ],
     image: chowe,
     source_code_link: 'https://chowe.app/',
+    GitHubCode: 'https://github.com/LopezJoha/ChoweMain',
   },
   {
     name: 'Stache',
@@ -178,16 +179,13 @@ const projects = [
         color: 'green-text-gradient',
       },
       {
-        name: 'Expo',
-        color: 'pink-text-gradient',
-      },
-      {
         name: 'Css 3',
-        color: 'orange-text-gradient',
+        color: 'pink-text-gradient',
       },
     ],
     image: stache,
     source_code_link: 'https://stache.io/',
+    GitHubCode: 'https://github.com/LopezJoha/stacheApp',
   },
   {
     name: 'Custom Comments',
@@ -209,6 +207,7 @@ const projects = [
     ],
     image: comment,
     source_code_link: 'https://github.com/LopezJoha?tab=repositories',
+    GitHubCode: 'https://github.com/LopezJoha/commentgenerator',
   },
   {
     name: 'Portfolio',
@@ -234,6 +233,7 @@ const projects = [
     ],
     image: portfolio,
     source_code_link: '#',
+    GitHubCode: 'https://github.com/LopezJoha/portfolioJoha',
   },
   {
     name: 'Beyond the Experience',
@@ -255,6 +255,7 @@ const projects = [
     ],
     image: BeyondExperience,
     source_code_link: 'https://github.com/LopezJoha?tab=repositories',
+    GitHubCode: null,
   },
   {
     name: `Programming Instructor`,
@@ -275,6 +276,7 @@ const projects = [
     ],
     image: programming,
     source_code_link: 'https://www.byjusfutureschool.com/',
+    GitHubCode: null,
   },
 ]
 
@@ -299,6 +301,7 @@ const proyectos = [
     ],
     image: chowe,
     source_code_link: 'https://chowe.app/',
+    GitHubCode: 'https://github.com/LopezJoha/ChoweMain',
   },
   {
     name: 'Stache',
@@ -314,16 +317,13 @@ const proyectos = [
         color: 'green-text-gradient',
       },
       {
-        name: 'Expo',
-        color: 'pink-text-gradient',
-      },
-      {
         name: 'Css 3',
-        color: 'orange-text-gradient',
+        color: 'pink-text-gradient',
       },
     ],
     image: stache,
     source_code_link: 'https://stache.io/',
+    GitHubCode: 'https://github.com/LopezJoha/stacheApp',
   },
   {
     name: 'Gestión de Comentarios Personalizados',
@@ -345,6 +345,7 @@ const proyectos = [
     ],
     image: comment,
     source_code_link: 'https://github.com/LopezJoha?tab=repositories',
+    GitHubCode: 'https://github.com/LopezJoha/commentgenerator',
   },
   {
     name: 'Portfolio',
@@ -370,6 +371,7 @@ const proyectos = [
     ],
     image: portfolio,
     source_code_link: '#',
+    GitHubCode: 'https://github.com/LopezJoha/portfolioJoha',
   },
   {
     name: `Beyond the Experience`,
@@ -391,6 +393,7 @@ const proyectos = [
     ],
     image: BeyondExperience,
     source_code_link: 'https://github.com/LopezJoha?tab=repositories',
+    GitHubCode: null,
   },
   {
     name: `Programming Instructor`,
@@ -411,6 +414,7 @@ const proyectos = [
     ],
     image: programming,
     source_code_link: 'https://www.byjusfutureschool.com/',
+    GitHubCode: null,
   },
 ]
 

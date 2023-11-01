@@ -14,7 +14,7 @@ const Navbar = (props) => {
 
   return (
     <nav
-      className={`${styles.paddingX} w-full  flex justify-between py-5 fixed top-0 z-20 bg-primary`}
+      className={`${styles.paddingX} w-full flex justify-between py-5 fixed top-0 z-20 bg-primary`}
     >
       <div className=" flex justify-around items-center gap-4">
         <Link
@@ -30,7 +30,7 @@ const Navbar = (props) => {
 
           <Switch funcion={props.function} idioma={props.language} />
         </div>
-        <ul className=" list-none hidden sm:flex flex-row gap-10">
+        <ul className="list-none hidden sm:flex flex-row gap-10">
           {navegationList.map((item) => (
             <li
               key={item.id}
@@ -52,7 +52,7 @@ const Navbar = (props) => {
           <div
             className={`${
               !toggle ? 'hidden' : 'flex'
-            } bg-primary bg-opacity-[75%] absolute top-20 right-0  w-full z-10`}
+            } bg-primary absolute top-20 right-0  w-full z-10`}
           >
             <ul className="w-full list-none flex flex-col gap-4 ">
               {navegationList.map((item) => (
