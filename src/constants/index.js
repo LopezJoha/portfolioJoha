@@ -235,28 +235,7 @@ const projects = [
     source_code_link: '#',
     GitHubCode: 'https://github.com/LopezJoha/portfolioJoha',
   },
-  {
-    name: 'Beyond the Experience',
-    description:
-      'I developed a landing page and booking system for a tourism company using WordPress. I utilized a combination of technologies and popular plugins to create a robust and functional platform that allows users to explore and book their travel destinations easily and securely.',
-    tags: [
-      {
-        name: 'WordPress',
-        color: 'blue-text-gradient',
-      },
-      {
-        name: 'WordPress Theme',
-        color: 'green-text-gradient',
-      },
-      {
-        name: 'HTML / CSS',
-        color: 'pink-text-gradient',
-      },
-    ],
-    image: BeyondExperience,
-    source_code_link: null,
-    GitHubCode: null,
-  },
+
   {
     name: `Programming Instructor`,
     description: `For the past year, I've been working as a children's programming instructor at Byju’s Future School. Together, we've developed video games like endless runners, real-time database-connected car racing games, as well as highly useful learning exercises and applications.`,
@@ -373,28 +352,7 @@ const proyectos = [
     source_code_link: '#',
     GitHubCode: 'https://github.com/LopezJoha/portfolioJoha',
   },
-  {
-    name: `Beyond the Experience`,
-    description:
-      'Dsarrollé una página de aterrizaje y sistema de reservas para una compañía de turismo utilizando WordPress. Utilicé una combinación de tecnologías y plugins populares para crear una plataforma sólida y funcional que permitiera a los usuarios explorar y reservar sus destinos de viaje de manera fácil y segura.',
-    tags: [
-      {
-        name: 'WordPress',
-        color: 'blue-text-gradient',
-      },
-      {
-        name: 'WordPress Theme',
-        color: 'green-text-gradient',
-      },
-      {
-        name: 'HTML / CSS',
-        color: 'pink-text-gradient',
-      },
-    ],
-    image: BeyondExperience,
-    source_code_link: null,
-    GitHubCode: null,
-  },
+
   {
     name: `Programming Instructor`,
     description: `Durante el último año, me desempeño como instructora de programación infantil en Byju’s Future School. Colaboramos en la creación de videojuegos como corredores infinitos y carreras de autos con base de datos en tiempo real, además de aplicaciones educativas y ejercicios innovadores.`,
