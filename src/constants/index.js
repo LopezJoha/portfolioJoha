@@ -206,7 +206,7 @@ const projects = [
       },
     ],
     image: comment,
-    source_code_link: 'https://github.com/LopezJoha?tab=repositories',
+    source_code_link: 'https://github.com/LopezJoha/commentgenerator',
     GitHubCode: 'https://github.com/LopezJoha/commentgenerator',
   },
   {
@@ -254,7 +254,7 @@ const projects = [
       },
     ],
     image: BeyondExperience,
-    source_code_link: 'https://github.com/LopezJoha?tab=repositories',
+    source_code_link: null,
     GitHubCode: null,
   },
   {
@@ -344,7 +344,7 @@ const proyectos = [
       },
     ],
     image: comment,
-    source_code_link: 'https://github.com/LopezJoha?tab=repositories',
+    source_code_link: 'https://github.com/LopezJoha/commentgenerator',
     GitHubCode: 'https://github.com/LopezJoha/commentgenerator',
   },
   {
@@ -392,7 +392,7 @@ const proyectos = [
       },
     ],
     image: BeyondExperience,
-    source_code_link: 'https://github.com/LopezJoha?tab=repositories',
+    source_code_link: null,
     GitHubCode: null,
   },
   {
