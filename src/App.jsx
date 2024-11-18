@@ -7,10 +7,10 @@ import {
   Navbar,
   Tech,
   Works,
+  ProjectList,
   StarsCanvas,
 } from './components'
 import React, { useState, useEffect } from 'react'
-
 
 const App = () => {
   const [language, setLanguage] = useState(true)
@@ -29,6 +29,7 @@ const App = () => {
 
         <About language={language} />
         <Works language={language} />
+        <ProjectList language={language} />
 
         <div className="relative z-0">
           <Tech />
